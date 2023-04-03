@@ -1,5 +1,4 @@
 // elemento por id
-
 const btnAgregar = document.getElementById("btnAgregar");
 const nuevaTarea = document.getElementById("nuevaTarea");
 const listaTareas = document.getElementById("listaTareas");
@@ -7,10 +6,12 @@ const noHayElementos = document.getElementsByTagName("li");
 
 // evento de click + funcion
 btnAgregar.addEventListener("click", function () {
+
   //ver si el string esta vacio
   if (nuevaTarea.value == "") {
     alert("Ingrese una tarea por favor");
-  } else {
+  } 
+  else {
     const tarea = nuevaTarea.value; // Asigno el valor en el campo "nuevaTarea" a tarea
     const agregarTarea = document.createElement("li"); //Creo nuevo elemento "li" con la nueva tarea
     agregarTarea.innerText = tarea; //asigno el valor
